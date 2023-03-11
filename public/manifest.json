@@ -1,0 +1,46 @@
+{
+	"name": "Whois Lookup",
+	"description": "Check for domain information",
+	"version": "1.0.0",
+	"author": "Bhuvan Gandhi",
+	"manifest_version": 3,
+	"action": {},
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"nativeMessaging",
+		"storage",
+		"tabs"
+	],
+	"background": {
+		"service_worker": "./bundle/worker.js",
+		"type": "module"
+	},
+	"externally_connectable": {
+		"matches": [
+			"*://*.google.com/*"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"./bundle/script.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"/assets/logo.jpg",
+				"/bundle/main.css"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	]
+}

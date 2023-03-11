@@ -1,0 +1,129 @@
+:host {
+	--whois-lookup-primary-color: #187e9a;
+	--whois-lookup-secondary-color: #444;
+}
+
+#whois-lookup-container * {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	outline: none;
+}
+
+.flex-layout {
+	display: flex;
+}
+.flex-dir-col {
+	flex-direction: column;
+}
+
+.col-gap-5 {
+	column-gap: 5px;
+}
+.col-gap-10 {
+	column-gap: 10px;
+}
+
+.row-gap-5 {
+	row-gap: 5px;
+}
+.row-gap-10 {
+	row-gap: 10px;
+}
+
+.padding-10 {
+	padding: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-primary {
+	color: var(--whois-lookup-primary-color);
+}
+
+.text-secondary {
+	color: var(--whois-lookup-secondary-color);
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background: var(--whois-lookup-primary-color);
+	color: white;
+	border: 1px solid var(--whois-lookup-primary-color);
+	cursor: pointer;
+	padding: 8px 14px;
+	font-size: 16px;
+}
+
+button:focus,
+button:hover {
+	background: white;
+	color: var(--whois-lookup-primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h4,
+h5,
+h6 {
+	font-weight: 100;
+}
+
+h1 {
+	font-size: 22px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+}
+h5 {
+	font-size: 12px;
+}
+h6 {
+	font-size: 10px;
+}
+
+.semi-bold {
+	font-weight: 500;
+}
+
+.bold-text {
+	font-weight: 700;
+}
