@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "ES2015",
+		"module": "ESNext",
+		"rootDir": "./",
+		"strict": false,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"typeRoots": ["/node_modules/@types"],
+		"types": ["@types/chrome"]
+	},
+	"include": ["./src/script"]
+}
